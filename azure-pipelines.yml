@@ -2,7 +2,7 @@ trigger:
 - master
 
 variables:
-  rootDir: 'msa-devops-2020'
+  rootDir: 'my-app'
   buildDir: '$(rootDir)/build'
 
 pool:
