@@ -21,9 +21,13 @@ steps:
     npm run build
     cd ..
   displayName: 'npm install and build'
-- task: NodeTool@0
+- task: ArchiveFiles@2
   inputs:
-    versionSpec: '10.x'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
 variables:
   rootDir: 'my-app'
   buildDir: '$(rootDir)/build'
