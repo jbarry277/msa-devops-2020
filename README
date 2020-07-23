@@ -1,1 +1,4 @@
 Azure web app URL: https://jbar-devops-web-app.azurewebsites.net/
+
+This pipeline allows me to push any code changes made on my computer to the develop or master branches of my github repo.
+These changes are then automatically deployed to my azure website server and can be viewed on the above URL
